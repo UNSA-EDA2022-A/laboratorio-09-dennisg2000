@@ -100,7 +100,7 @@ public class GraphAdjacentList implements Graph {
         	removeEdge(vertices.get(i).data,vertex);
         }
         vertices.remove(posicion);
-        numVertices--;
+        this.numVertices--;
     	return true;
     }
 
