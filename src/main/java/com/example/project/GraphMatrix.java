@@ -79,7 +79,13 @@ public class GraphMatrix implements Graph {
 
     public int countConnectedComponents() {
 
-        return -1;
+        int u=1;
+    	ArrayList<Integer> cant=depthFirstSearch(0);
+    	for(int i = 0; i < this.numVertices &&  this.numVertices > 0 ; i++) {
+    		if(cant.get(i) == -1)
+    			u++;
+    	}
+    	return u;
     }
 
     public static void main(String args[]) {
