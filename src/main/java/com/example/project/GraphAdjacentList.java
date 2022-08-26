@@ -91,7 +91,7 @@ public class GraphAdjacentList implements Graph {
 
     public boolean removeVertex(int vertex){
        int posicion=0;
-        for(int i=0;i<this.numVertices.size();i++) {
+        for(int i=0;i<vertices.size();i++) {
         	if(vertices.get(i).data==vertex) {
         		posicion=i;
         	}
