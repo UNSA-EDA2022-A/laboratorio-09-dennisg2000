@@ -91,12 +91,12 @@ public class GraphAdjacentList implements Graph {
 
     public boolean removeVertex(int vertex){
        int posicion=0;
-        for(int i=0;i<vertices.size();i++) {
+        for(int i=0;i<this.numVertices.size();i++) {
         	if(vertices.get(i).data==vertex) {
         		posicion=i;
         	}
         }
-        for(int i=0;i<numVertices;i++) {
+        for(int i=0;i<this.numVertices;i++) {
         	removeEdge(vertices.get(i).data,vertex);
         }
         vertices.remove(posicion);
